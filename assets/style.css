@@ -1,6 +1,10 @@
-.site-header {
-    background-color: lightsteelblue;
-    text-align: center;
-    padding: 20px;
-}
+* {
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }  
 
+.site-header {
+   background-color: lightsteelblue;
+   text-align: left;
+   padding: 20px;
+}
