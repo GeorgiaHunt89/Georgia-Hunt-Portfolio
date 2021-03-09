@@ -1,10 +1,10 @@
-* {
-    box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-  }  
-
-.site-header {
-   background-color: lightsteelblue;
-   text-align: left;
-   padding: 20px;
+  
+.hero {
+    height: 500px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-image: url("Woman-typing-on-mac.png");
+    background-size: cover;
+    background-position: center;
 }
