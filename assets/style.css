@@ -82,7 +82,7 @@
   border-radius: 4px;
 }
 
-/* contact me */
+/* contact title */
 .contact a.contact {
   font-size: 50px;
   font-weight: bold;
@@ -118,6 +118,33 @@
   border: 1px 
 }
 
+/* aside background */
+.aside {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  background-position: center;
+}
+
+/* aside text */
+h1 {
+  float: left;
+  color: #deba54;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 50px;
+  border-radius: 4px;
+}
+
+/* aside title */
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
 /* content */
 .main {
   width: 75%;
@@ -133,6 +160,7 @@
   -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
   padding: 0 4px;
+  row-gap: 15px;
 }
 
 .column {
@@ -140,6 +168,7 @@
   flex: 50%;
   max-width: 50%;
   padding: 0 4px;
+  column-gap: 15px;
 }
 
 .column img {
