@@ -139,10 +139,11 @@ h2, h4, h5 {
   text-align: center;
   padding: 5px;
   text-decoration: none;
-  line-height: 25px;
+  line-height:15px;
   border-radius: 2px;
-  font-size: 25px;
-  font-weight: bold, italic;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* previous work layout */
