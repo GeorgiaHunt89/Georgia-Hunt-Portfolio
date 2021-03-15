@@ -77,6 +77,54 @@
     background-position: center;
 }
 
+/* contact */
+.contact {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+/* contact navigation */
+.contact a {
+  float: left;
+  color: #deba54;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* contact me */
+.contact a.contact {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* hover effects */
+.contact a:hover, .contact a.active {
+  background-color: #deba54;
+  color: #f1f1f1;
+}
+
+.contact-right {
+  float: right;
+}
+
+/* media screen */
+@media screen and (max-width: 500px) {
+  .contact a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .contact-right {
+    float: none;
+  }
+} 
+
+
 /* previous work layout */
 .row {
   display: -ms-flexbox; 
@@ -106,3 +154,4 @@
     max-width: 50%;
   }
 }
+
