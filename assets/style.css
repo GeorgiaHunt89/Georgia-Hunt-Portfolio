@@ -75,6 +75,14 @@
   border: 1px 
 }
 
+.headshot {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* about me content */
 .about-me-main {
   display: -ms-flexbox;
@@ -110,7 +118,7 @@
 }
 
 
-/* aside text */
+/* heading text */
 h1, h3, h5 {
   display: block;
   float: left;
@@ -122,6 +130,19 @@ h1, h3, h5 {
   border-radius: 4px;
   font-size: 50px;
   font-weight: bold;
+}
+
+/* aside text */
+h2, h4, h5 {
+  display: block;
+  color: #deba54;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  line-height: 25px;
+  border-radius: 2px;
+  font-size: 25px;
+  font-weight: bold, italic;
 }
 
 /* previous work layout */
