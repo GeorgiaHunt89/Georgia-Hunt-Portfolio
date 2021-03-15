@@ -3,19 +3,18 @@
   box-sizing: border-box ;
 }
 
-/* header */
-.header, .contact {
+/* header & footer */
+.header {
   background-color: #f1f1f1;
-  padding: 20px 10px;
+  padding: 30px 10px;
   background-position: center;
   width: 100%;
-  display: flex;
-  justify-content: space-between
+  display: block;
+  justify-content: space-between;
 }
 
 /* header navigation */
-.header a, .contact a {
-  float: left;
+.header a {
   color: #deba54;
   text-align: center;
   padding: 15px;
@@ -23,32 +22,35 @@
   font-size: 20px;
   line-height: 25px;
   border-radius: 4px;
+  width: 100%;
+  display: flexbox;
+  justify-content: space-between;
 }
 
 /* header */
-.header a.name, .contact a.contact {
+.header a.name {
   font-size: 50px;
   font-weight: bold;
 }
 
 /* hover effects */
-.header a:hover, .header a.active, .contact a:hover, .contact a.active {
+.header a:hover, .header a.active {
   background-color: #deba54;
   color: #f1f1f1;
 }
 
-.header-right, .contact-right {
+.header-right {
   float: right;
 }
 
 /* media screen */
 @media screen and (max-width: 800px) {
-  .header a, .contact a  {
+  .header a {
     float: none;
     display: flex;
     text-align: left;
   }
-  .header-right, .contact-right {
+  .header-right  {
     float: none;
   }
 } 
@@ -87,28 +89,24 @@
 
 /* about me content */
 .about-me-main {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
   padding: 0 4px;
   width: 75%;
   float: left;
   padding: 15px;
-  border: 1px 
+  border: 1px; 
 }
 
 /* previous work aside */
 .work-menu {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
   padding: 0 4px;
   width: 25%;
   float: right;
   padding: 15px;
-  border: 1px 
+  border: 1px; 
 }
 
 /* previous work content */
@@ -116,14 +114,13 @@
   width: 75%;
   float: left;
   padding: 15px;
-  border: 1px 
+  border: 1px; 
 }
 
 
 /* heading text */
 h1, h3, h5 {
-  display: block;
-  float: left;
+  display: flex;
   color: #deba54;
   text-align: center;
   padding: 15px;
@@ -136,7 +133,7 @@ h1, h3, h5 {
 
 /* aside text */
 h2, h4, h5 {
-  display: block;
+  display: flex;
   color: #deba54;
   text-align: center;
   padding: 5px;
@@ -150,20 +147,19 @@ h2, h4, h5 {
 
 /* previous work layout */
 .row {
-  display: -ms-flexbox; 
   display: flex;
-  -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
   padding: 0 4px;
   row-gap: 15px;
 }
 
 .column {
-  -ms-flex: 50%; 
-  flex: 50%;
-  max-width: 50%;
+  width: 50%;
   padding: 0 4px;
-  column-gap: 15px;
+}
+
+.column:first-child {
+  width: 100%;
 }
 
 .column img {
@@ -179,3 +175,58 @@ h2, h4, h5 {
     max-width: 50%;
   }
 }
+
+/* footer */
+.contact {
+  background-color: #f1f1f1;
+  padding: 30px 10px;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer navigation */
+.contact a {
+  color: #deba54;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer */
+.contact a.name {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* hover effects */
+.contact a:hover, .contact a.active {
+  background-color: #deba54;
+  color: #f1f1f1;
+}
+
+.contact-right {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+/* media screen */
+@media screen and (max-width: 800px) {
+  .contact a  {
+    float: none;
+    display: flex;
+    text-align: left;
+  }
+  .contact-right {
+    float: none;
+  }
+} 
