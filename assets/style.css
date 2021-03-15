@@ -111,18 +111,40 @@
 } 
 
 /* aside */
-.menu {
+.about-me-menu {
   width: 25%;
   float: left;
   padding: 15px;
   border: 1px 
 }
 
+/* content */
+.about-me-main {
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 1px 
+}
+
+/* aside */
+.work-menu {
+  width: 25%;
+  float: right;
+  padding: 15px;
+  border: 1px 
+}
+
+/* content */
+.work-main {
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 1px 
+}
+
 /* aside background */
-.aside {
-  overflow: hidden;
+.about-me-section {
   background-color: #f1f1f1;
-  padding: 20px 10px;
   background-position: center;
 }
 
@@ -142,15 +164,6 @@ h1 {
 h1 {
   font-size: 50px;
   font-weight: bold;
-}
-
-
-/* content */
-.main {
-  width: 75%;
-  float: left;
-  padding: 15px;
-  border: 1px 
 }
 
 /* previous work layout */
@@ -173,7 +186,7 @@ h1 {
 
 .column img {
   margin-top: 8px;
-  vertical-align: middle;
+  vertical-align: left;
   width: 100%;
 }
 
