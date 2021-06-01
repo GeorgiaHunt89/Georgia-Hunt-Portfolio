@@ -1,14 +1,41 @@
-# Georgia-Hunt-Portfolio
 
-Created a personalised portfolio that is both functional on multitude of devices and accessible for hearing impared.
+    # Georgia Hunt Portfolio
+    [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+    
+[Description](#description)
+[Installation Instructions](#installation)
+[Usage Information](#usage)
+[Contributors](#contributors)
+[Test Instructions](#testing)
+[Deployment Link](#deployment)
+[Questions](#questions)
+[License](#license)
 
-![Portfolio-Screenshot-One](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Portfolio-Screenshot-One.png)
 
-![Portfolio-Screenshot-Two](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Portfolio-Screenshot-Two.png)
+    ## Description
+    A portfolio containing all the current applications I have been working on throughout my coding bootcamp course.
 
-![Portfolio-Screenshot-Three](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Portfolio-Screenshot-Three.png)
+    ## Installation Instructions
+    n/a 
 
-![Portfolio-Screenshot-Four](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Portfolio-Screenshot-Four.png)
+    ## Usage Information
+    This project displays applications I have created that detail my current level of coding ability. 
+
+    ## Contributors
+    Georgia Hunt
+
+    ## Test Instructions
+    n/a 
+
+    ## Deployment Link
+    https://georgiahunt89.github.io/Georgia-Hunt-Portfolio/
+
+    ## Questions
+    I would love to hear your feedback, please don't hesitate to contact me via email at [georgialhunt89@gmail.com](mailto;georgialhunt89@gmail.com) or visit my profile on [GitHub](https://github.com/GeorgiaHunt89)
+        
+    ## License
+    This project is protected under [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs), please read through the license terms and conditions.
+    
 
 
 I created a portfolio to display my previous works, during this creation I learnt to more about media queries and flex wrapping. I further developed my knowledge on columns and rows by creating a display for my previous repos.
@@ -17,28 +44,8 @@ Given this was my portfolio I took the opportunity to learn more about justifica
 
 Finally I mirrored the navigation bar at the bottom for the contact section in the footer, I created clickable code rather than listing my phone and email address.
 
-Below is the HTML code I created for the portfolio:
-
-![HTML-Screenshot-One](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Html-Screenshot-One.png)
-
-![HTML-Screenshot-Two](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Html-Screenshot-two.png)
-
-![HTML-Screenshot-Three](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Html-Screenshot-three.png)
-
-
 In creating this portfolio I spent time using a range of CSS coding, below is the CSS script created for this portfolio:
 
-![CSS-Screenshot-One](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/CSS-Screenshot-One.png)
-
-![CSS-Screenshot-Two](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/CSS-Screenshot-two.png)
-
-![CSS-Screenshot-Three](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/CSS-Screenshot-three.png)
-
-![CSS-Screenshot-Four](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/CSS-Screenshot-four.png)
-
-![CSS-Screenshot-Five](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/CSS-Screenshot-five.png)
-
-![CSS-Screenshot-Six](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/CSS-Screenshot-six.png)
 
 
 
