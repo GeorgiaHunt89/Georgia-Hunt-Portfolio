@@ -1,93 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <title>Georgia Hunt Portfolio</title>  
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Georgia Hunt Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma-rtl.min.css">
+    <link href="~bulma-carousel/dist/css/bulma-carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+    }
+    </style>
 </head>
 <body>
     <!-- header -->
-    <section class="header">
-        <a class="name"> Georgia Hunt</a>
-        <div class="header-right">
-                <a href="#about-me">About Me</a></a>
-                <a href="#work">Work</a></a>
-                <a href="#contact">Contact</a></a>
-                <a href="#resume">Resume</a></a>
-            </div>
-    </section>
 
+    <nav id="nav-wrap" class="current" style="display: block;">
+      <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+      <a class="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
+      <ul id="nav" class="nav">
+        <li class="current">
+          <li class=""><a class="smoothscroll" href="#about">About</a>
+          </li>
+          <li class=""><a class="smoothscroll" href="#resume">Resume</a>
+          </li>
+          <li class=""><a class="smoothscroll" href="#previous-work">Previous Work</a>
+          </li>
+          <li class=""><a class="smoothscroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    
 
 <!-- hero image -->
-<section class="hero" alt="Woman typing on a laptop"></section>
-<!-- about me -->
-<main>
-    <aside article id="about-me" class="about-me-menu">
-        <h1> Hello, I'm Georgia </h1>
-        <img class="headshot" src="assets/Images/Head-shot.png" alt="Georgia-Hunt-Head-shot"></aside>
-        <article class="about-me-main">
-            <h2> Let's get acquainted...</h2>
-            <p> I am web developer from Adelaide, South Australia with a background predominately in senior management roles within the commercial building development, retail and property management sectors. A passion for business management, web development, and self-improvement, I run a small career consulting and recruitment business in my spare time that empowers others to find their ideal careers and connects job hunters with ideal employers.
-            Currently undertaking an MBA, while also studying web development through a coding bootcamp at Adelaide University,
-            I plan to further develop skills with...</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>Bootstrap</li>
-                <li>Express.js</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-                <li>Database Theory</li>
-                <li>MongoDB</li>
-                <li>MySQL</li>
-                <li>Command Line</li>
-                <li>Git</li>
-                <li>and more..</li>
-            </ul>
-        </article>
+<section class="hero-img" alt="Woman typing on a laptop">
+<img class="headshot" src="assets/Images/GH-HeadShot.png" alt="Georgia-Hunt-Head-shot">
+  <p class="hero-title" style="font-size:50px">Georgia Hunt</p>
+  <p class="hero-subtitle">Full Stack Developer</p>
+</section>
+
+<!-- about me section -->
+<section class="section is-medium">ß
+  <!-- About me overlay img ----->
+<img style="float: left;margin: 0px 15px 15px 0px;position: relative;margin-top: -136px;" src="assets/Images/About-Me-Image.png" width="auto">
+  <h1 class="aboutme-title" id="about" class="about">Let's get acquainted..</h1>
+    <p class="about-mesubtitle">I am web developer from Adelaide, South Australia with a background predominately in senior management roles within the commercial building development, retail and property management sectors. <br>
+      A passion for business management, web development, self improvement and continuous learning has led to further education with a soon to be completed Masters in Business Administration and certification in web development to purse a career change into the tech industry.
+      With over 8 + years in management, I have experienced dynamic leadership exposure which has established a desire to deliver superior business outcomes and practical team development. 
+    
+    A strong history of entrepreneurial endeavors led me to create online businesses requiring websites and online platforms, where I discovered the art of web development and the capabilities that coding provides. 
+    A fascination for all things web development was born out of humble beginnings, since then I have devoted my time to learning all things coding and webdev to facilitate a career change into full stack development. 
+    
+    My well developed team management, organisational and problem solving abilities allow me to work both harmoniously within teams and diligently on my own. I am a self starter that thrives in dynamic, challenging and time sensetive enviroments.
+    In previous roles I have effectively collaborated with a range of stakeholders and pride my communication and cross-function collaboration as the key to many successeful business outcomes.
+    </p>
+</section>
+
 
 <!-- previous work  -->
-<aside article id="work" class="work-menu">
-    <h3>Previous work</h3>
-    <h4> Here are some examples of my previous works </h4></aside> 
-<!-- previous work photo grid -->
-<main class="work-main"> 
-    <section class="row"> 
-        <section class="column">
-            <a href="https://brucksta.github.io/Bitcoin-Bubbler/"> <img src="assets/Images/Bitcoin-Bubbler-Group-Assignment-One.png">
-            </a>
-        </section>
-    <!-- </section> -->
-    <!-- <section class="row">  -->
-        <div class="column">
-            <a href="https://georgiahunt89.github.io/Work-Day-Scheduler/"> <img src="assets/Images/Work-Day-Scheduler.png" style="width:100%"></a>
-          <a href="https://georgiahunt89.github.io/Weather-Dashboard/"> <img src="assets/Images/Weather-Dashboard.png" style="width:100%"></a>
-        </div>
-    <!-- </section> -->
-    <!-- <section class="row">  -->
-          <section class="column">
-                <a href="https://georgiahunt89.github.io/Password-Generator/Index.html" ><img src="assets/Images/Password-Generator.png" style="width:100%"></a>
-                <a href="https://georgiahunt89.github.io/JavaScript-Fundamentals-Quiz/"><img src="assets/Images/JavaScript-Quiz.png" style="width:100%"></a>
-            </section>
-        </section>
-    </section>
-</main>
+<section>
+    <h2 class="aboutme-title" id="previous-work" class="previous-work">Previous work</h2>
+    <p class="about-mesubtitle"> Here are some examples of my previous applications that are available to view and trial through GitHub and Heroku. Simply click on the slide to view the GitHub page.</p>
+  </section> 
+<!-- previous work large demos carousel -->
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Start Carousel -->
+    <div class="carousel-inner" role="listbox">
+
+<!-- Recipe Scraper Demo -->
+<div class="item active">
+
+<div class="card">
+  <div class="card-image">
+    <figure class="image" style="margin-left: 100px; margin-right: 100px; margin-top: 100px;">
+      <a href="https://github.com/GeorgiaHunt89/Recipe-Scraper/"><img src="./assets/Images/Recipe-Scraper-Demo.gif" alt="Recipe Scraper"></a>
+    </figure>
+  </div>
+  <!-- card-content -->
+    <div class="media">
+      <div class="media-content">
+        <p class="title is-4" style="margin-left: 100px; margin-right: 100px;">Recipe Scraper</p>
+    <div class="content" style="margin-left: 100px; margin-right: 100px;">
+      A simple application that allows the user to input a recipe and receive all the recipe data scraped and saved to a recipe card within their own dashboard.<br>
+      The motivation behind the recipe scraper was to offer an easy way to track and view various recipes from different sites.<br>
+      This application employs the use of NPM packages including recipe scraper, express session, express handlebars, Bcrypt and Dotenv while also implementing frameworks and modules from Bulma, Sequelize ORM, ExpressJS and MySQL2.<br>
+      <br>
+      <p class="title is-6">Created 25th June 2021</p>
+    </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+
+<!-- Bitcoin Bubbler Demo -->
+<div class="item">
+  <div class="card">
+    <div class="card-image">
+      <figure class="image" style="margin-left: 100px; margin-right: 100px; margin-top: 100px;">
+        <a href="https://github.com/GeorgiaHunt89/Bitcoin-Bubbler"><img src="./assets/Images/Bitcoin-Bubbler-demo.gif" alt="Bitcoin Bubbler"></a>
+      </figure>
+    </div>
+    <!-- card-content -->
+      <div class="media">
+        <div class="media-content">
+          <p class="title is-4" style="margin-left: 100px; margin-right: 100px;">Bitcoin Bubbler</p>
+      <div class="content" style="margin-left: 100px; margin-right: 100px;">
+        A application that allows individuals to monitor the current Bitcoin price, monthly change in US dollars and %. The user has the option to input an amount of bitcoin and the price in a range of different currencies.<br>
+        The motivation behind the Bitcoin Bubbler was to offer crypto currency holders an easy way to track and view the price of their bitcoin.<br>
+        This application employs the use of API packages CoinDesk and CurrencyConverter.<br>
+        <br>
+        <p class="title is-6">Created 20th April 2021</p>
+      </div>
+      </div>
+    </div>
+      </div>
+    </div> 
+
+
+<!-- Team Profile Generator Demo -->
+<div class="item">
+  <div class="card">
+    <div class="card-image">
+      <figure class="image" style="margin-left: 100px; margin-right: 100px; margin-top: 100px;">
+        <a href="https://github.com/GeorgiaHunt89/Team-Profile-Generator"><img src="./assets/Images/Team-Profile-Generator-Demo.gif" alt="Team Profile Generator Demo"></a>
+      </figure>
+    </div>
+    <!-- card-content -->
+      <div class="media">
+        <div class="media-content">
+          <p class="title is-4" style="margin-left: 100px; margin-right: 100px;">Team Profile Generator</p>
+      <div class="content" style="margin-left: 100px; margin-right: 100px;">
+        A Node.js command-line application that allows a user to input information about team members, then generates an HTML webpage that displays summaries for each person.<br>
+        <br>
+        <p class="title is-6">Created 8th June 2021</p>
+      </div>
+      </div>
+    </div>
+      </div>
+    </div> 
+
+
+</div> 
+
+<!-- End Carousel -->
+<!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+</div>
 <br>
 <br>
+
     <!-- Contact me -->
  <footer article id="contact" class="contact">
-    <a class="name"> Contact Me</a>
     <nav class="contact-right">
-            <nav class="contact-right">
                 <a href="tel:+610407401924">Call</a></a>
                 <a href="mailto:georgialhunt89@gmail.com">Email</a></a>
                 <a href="https://www.linkedin.com/in/georgialhunt/">LinkedIn</a></a>
+                <a href="https://github.com/GeorgiaHunt89">GitHub</a></a>
                 <a href="#resume">Resume</a></a>
             </nav>
         </footer>
         </body>
+
+   
 </html>

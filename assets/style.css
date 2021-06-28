@@ -1,48 +1,200 @@
 /* page sections */
-*{
-  box-sizing: border-box ;
+* {
+  box-sizing: border-box;
 }
 
-/* Name */
-.navbar-item-name {
-  font-size: 50px;
-  font-weight: bold;
-  color: #deba54;
-  text-align: center;
-  padding: 25px;
-  margin-left: 30px;
-  text-decoration: none;
-  font-size: 50px;
-  line-height: 50px;
-  border-radius: 4px;
+/* ------------------------------------------------------------------ */
+/* b. Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+  position: relative;
+  height: 800px;
+  min-height: 500px;
   width: 100%;
-  justify-content: space-between;
-}
-
-/* Name hover effects */
-.navbar-brand a:hover, .navbar-brand a.active {
-  color: #deba54;
-  opacity: 0.6;
-}
-
-/* navbar */
-.navbar-item-heading{
-  color: #deba54;
+  background: #303030;
   text-align: center;
-  padding: 25px;
-  line-height: 50px;
-  justify-content: space-between;
-  font-size: 25px;
-  justify-items: self-end;
+  overflow: hidden;
 }
 
-/* navbar hover effects */
-.navbar-menu :hover, .navbar-menu.active {
-  color: #f1f1f1;
-  background: #deba54;
-  opacity: 0.6;
+/* vertically center banner section */
+header:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+header .banner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
+header .banner-text {
+  width: 100%;
+}
+header .banner-text h1 {
+  font: 90px/1.1em "Alice";
+  color: #deba54;
+  letter-spacing: -2px;
+  margin: 0 auto 18px auto;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+header .banner-text h3 {
+  font: 18px/1.9em "Alice";
+  color: #deba54;
+  margin: 0 auto;
+  width: 70%;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+header .banner-text h3 span,
+header .banner-text h3 a {
+  color: #deba54;
+}
+header .banner-text hr {
+  width: 60%;
+  margin: 18px auto 24px auto;
+  border-color: white;
+  /* border-color: rgba(150, 150, 150, .1); */
+}
+
+/* header social links */
+header .social {
+  margin: 24px 0;
+  padding: 0;
+  font-size: 30px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+}
+header .social li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0;
+}
+header .social li a {
+  color: #deba54;
+}
+header .social li a:hover {
+  color: white;
+}
+
+/* scrolldown link */
+header .scrolldown a {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -29px;
+  color: #deba54;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  color: #deba54;
+  border-radius: 100%;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header .scrolldown a:hover {
+  color: #deba54;
+}
+
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul,
+#nav-wrap li,
+#nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.repo,
+.deploy {
+  background: none;
+  color: white;
+  align-content: center;
+}
+
+/* nav-wrap */
+#nav-wrap {
+  font: 25px "Alice";
+  width: 100%;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.opaque {
+  background-color: #303030;
+}
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn {
+  display: none;
+}
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+
+  /* center align the menu */
+  text-align: center;
+}
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+  /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: #deba54;
+
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+ul#nav li a:active {
+  background-color: transparent !important;
+}
+ul#nav li.current a {
+  color: #deba54;
+}
+
+.top-nav {
+  font-size: 20px;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  font-weight: 600;
+  padding: 0px 32px;
+  background: transparent;
+}
+
+.navbar-overlay {
+  position: relative;
+  margin-bottom: -104px;
+  z-index: 1;
+}
 
 /* header & footer */
 .header {
@@ -54,9 +206,12 @@
   justify-content: space-between;
 }
 
-
 .header-right {
   float: right;
+}
+
+.carousel {
+  overflow: hidden;
 }
 
 /* media screen */
@@ -66,33 +221,176 @@
     display: flex;
     text-align: left;
   }
-  .header-right  {
+  .header-right {
     float: none;
   }
-} 
-
-/* hero image */
-.hero {
-    height: 500px;
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    background-image: url("Images/Woman-typing-on-mac.png");
-    background-size: cover;
-    background-position: center;
 }
 
-/* about me aside */
-.about-me-menu {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap; 
-  flex-wrap: wrap;
-  padding: 0 4px;
-  width: 25%;
+/* HERO SECTION */
+/* hero image */
+.hero-img {
+  position: relative;
+  min-height: auto;
+  height: 900px;
+  margin-top: 0em;
+  padding-bottom: 10em;
+  width: 100%;
+  background-image: url("Images/Typing-Hands.gif");
+  background-size: cover;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.headshot {
+  justify-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+/* hero text */
+.hero-title {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: bold;
+  color: #deba54;
+  padding: 25px;
+  text-decoration: none;
+  line-height: 50px;
+  border-radius: 4px;
+  width: 100%;
+  justify-content: space-between;
+  font-family: Alice;
+}
+
+.hero-subtitle {
+  text-align: center;
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: lightslategray;
+  text-align: center;
+  padding: 25px;
+  line-height: 50px;
+  justify-content: space-between;
+  font-size: 25px;
+  font-family: Josefin Sans;
+  justify-items: self-end;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.overlay-img {
+  position: absolute;
+  top: 105%;
+  left: 6%;
   float: left;
-  padding: 15px;
-  border: 1px 
+  padding: 10px;
+}
+
+/* ABOUT ME SECTION */
+/* hero image */
+.section {
+  background-color: #15335f;
+}
+
+.aboutme-title {
+  width: auto;
+  text-align: right;
+  font-size: 50px;
+  font-weight: bold;
+  color: #deba54;
+  padding: 25px;
+  text-decoration: none;
+  line-height: 50px;
+  border-radius: 4px;
+  justify-content: space-between;
+  font-family: Alice;
+}
+
+.about-mesubtitle {
+  width: auto;
+  text-align: right;
+  position: relative;
+  color: lightslategray;
+  padding: 25px;
+  line-height: 50px;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: Josefin Sans;
+}
+
+/* hero text */
+.hero-title {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: bold;
+  color: #deba54;
+  padding: 25px;
+  text-decoration: none;
+  line-height: 50px;
+  border-radius: 4px;
+  width: 100%;
+  justify-content: space-between;
+  font-family: Alice;
+}
+
+.hero-subtitle {
+  text-align: center;
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: lightslategray;
+  text-align: center;
+  padding: 25px;
+  line-height: 50px;
+  justify-content: space-between;
+  font-size: 25px;
+  font-family: Josefin Sans;
+  justify-items: self-end;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
 }
 
 .headshot {
@@ -103,39 +401,10 @@
   margin-right: auto;
 }
 
-/* about me content */
-.about-me-main {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  width: 75%;
-  float: left;
-  padding: 15px;
-  border: 1px; 
-}
-
-/* previous work aside */
-.work-menu {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  width: 25%;
-  float: right;
-  padding: 15px;
-  border: 1px; 
-}
-
-/* previous work content */
-.work-main { 
-  width: 75%;
-  float: left;
-  padding: 15px;
-  border: 1px; 
-}
-
-
 /* heading text */
-h1, h3, h5 {
+h1,
+h3,
+h5 {
   display: flex;
   color: #deba54;
   text-align: center;
@@ -148,17 +417,18 @@ h1, h3, h5 {
 }
 
 /* aside text */
-h2, h4, h5 {
+h2,
+h4,
+h5 {
   display: flex;
   color: #deba54;
   text-align: center;
   padding: 5px;
   text-decoration: none;
-  line-height:15px;
+  line-height: 15px;
   border-radius: 2px;
   font-size: 20px;
   font-weight: bold;
-  font-style: italic;
 }
 
 /* previous work layout */
@@ -194,7 +464,7 @@ h2, h4, h5 {
 
 /* footer */
 .contact {
-  background-color: #f1f1f1;
+  background-color: #deba54;
   padding: 30px 10px;
   background-position: center;
   width: 100%;
@@ -204,7 +474,7 @@ h2, h4, h5 {
 
 /* footer navigation */
 .contact a {
-  color: #deba54;
+  color: #f1f1f1;
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -223,21 +493,23 @@ h2, h4, h5 {
 }
 
 /* hover effects */
-.contact a:hover, .contact a.active {
+.contact a:hover,
+.contact a.active {
   background-color: #deba54;
   color: #f1f1f1;
 }
 
 .contact-right {
   display: flex;
-  text-align: center;
+  text-align: right;
   padding: 10px;
   justify-content: space-between;
+  font-family: Alice;
 }
 
 /* media screen */
 @media screen and (max-width: 800px) {
-  .contact a  {
+  .contact a {
     float: none;
     display: flex;
     text-align: left;
@@ -245,4 +517,4 @@ h2, h4, h5 {
   .contact-right {
     float: none;
   }
-} 
+}
