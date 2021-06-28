@@ -28,7 +28,7 @@ https://georgiahunt89.github.io/Georgia-Hunt-Portfolio/
 
 Walkthrough video demonstrating the portfolio layout and links to GitHub.
 
-![Georgia Hunt Portfolio Gif](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/Images/README%20Gifs/HTML%20Team%20Profile%20Display%20.gif?raw=true)
+![Georgia Hunt Portfolio Gif](https://github.com/GeorgiaHunt89/Georgia-Hunt-Portfolio/blob/main/assets/Images/Portfolio-Walkthrough-Demo.gif?raw=true)
 
 ## Contributors
 
